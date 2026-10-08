@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section*{Cotree density test}
+
+Definitions, all in terms of $c$ (where $c \ge 4$):
+\begin{align*}
+  a &= c - 1, \\
+  v &= \log_2(c) - 1, \\
+  A^- &= a^2 - a - 1 = (c-1)^2 - (c-1) - 1, \\
+  \text{lcm}_{LU} &= v \cdot \frac{c^3}{2} \cdot (c-1)^2, \\
+  \text{lcm}_{pq} &= \frac{c}{2}\,(c-1)^2.
+\end{align*}
+
+\begin{align}
+        d(tT)&=d(S_{\ge0}) \nonumber \\
+        \frac{\;a^3v^2+A^-v^2\;}{\text{lcm}_{LU}}&=
+        \frac{(a-1)v}{{\text{lcm}_{pq}}} \nonumber \\
+        \frac{2(c-2)\log_2(\frac{c}{2})}{(c-1)^2\,c\; { \log_2(2)}}&=
+        \frac{2(c-2)(\frac{\log_2(c)}{\log_2(2)}-1)}{(c-1)^2\, c }
+\end{align}
+
+\end{document}
